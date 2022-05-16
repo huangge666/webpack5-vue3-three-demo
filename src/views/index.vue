@@ -1,7 +1,5 @@
 <template>
   <div>
-    <img src="../assets/img/logo.png"
-         alt="" />
     <p class="title">{{ title }}</p>
   </div>
 </template>
@@ -11,7 +9,7 @@ export default defineComponent({
   name: "index",
 
   setup() {
-    const title = ref("渐进式JavaScript 框架-首页1");
+    const title = ref("渐进式JavaScript 框架-THREE");
     onMounted(() => {
       console.log("mounted!");
     });
