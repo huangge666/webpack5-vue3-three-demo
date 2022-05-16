@@ -18,6 +18,7 @@
         得分：<span class="current-score">{{score}}</span>
       </div>
     </div>
+    <div class="model"></div>
   </div>
 </template>
 <script>
@@ -63,7 +64,19 @@ export default defineComponent({
 });
 </script>
 <style lang="scss" scoped>
+.model{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 .mask {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;

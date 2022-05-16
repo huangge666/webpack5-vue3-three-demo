@@ -93,16 +93,15 @@ export default class Game {
     window.addEventListener("resize", () => {
       this._handleWindowResize(); //绑定窗口大小
     });
-    let canvas = document.querySelector("canvas");
+    // let canvas = document.querySelector("canvas");
+    let canvas = document.querySelector(".model");
     canvas.addEventListener("pointerdown", () => {
       //鼠标按下状态
       this._handleMouseDown();
-      console.time("鼠标按下");
     });
     canvas.addEventListener("pointerup", () => {
       //鼠标松开状态
       this._handleMouseUp();
-      console.timeEnd("鼠标松开");
     });
   }
 
