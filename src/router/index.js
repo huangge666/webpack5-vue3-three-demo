@@ -25,6 +25,26 @@ const router = createRouter({
         keepAlive: false, // 是否缓存组件
       },
     },
+    {
+      path: "/fj",
+      name: "fj",
+      component: () =>
+        import(/* webpackChunkName: "index" */ "@/views/game/feiji/index.vue"),
+      meta: {
+        auth: false, // 是否需要登录
+        keepAlive: false, // 是否缓存组件
+      },
+    },
+    {
+      path: "/test/demo",
+      name: "demo",
+      component: () =>
+        import(/* webpackChunkName: "index" */ "@/views/test/demo.vue"),
+      meta: {
+        auth: false, // 是否需要登录
+        keepAlive: false, // 是否缓存组件
+      },
+    },
   ],
 });
 // 全局路由钩子函数 对全局有效
